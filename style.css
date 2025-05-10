@@ -1,0 +1,307 @@
+:root{
+    --primary-color: #095af1;
+    --secondary-color: #f8f8f8;
+    --accent-color: #000000;
+    --text-color: #fdfdfd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+    
+
+}
+
+
+.bg {
+    background-image: url('assets/bg.png'); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -9999;
+  }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-height: 50px;
+    background-color: transparent;
+    background: none;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+
+.logo{
+    margin-right: auto;
+    width: 200px;
+    object-fit: contain; 
+    height: 100px; 
+    overflow: hidden;
+    background-color: transparent;
+    background: none;
+}
+
+
+.nav-right a {
+    margin-left: 3rem;
+    color: var(--text-color);
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: transparent;
+    background: none;
+  }
+
+.nav-right{
+    margin-right: 15rem; 
+    display: flex;
+    gap: 2rem ;
+    background-color: transparent;
+    background: none;
+    padding: 8px 16px;
+    align-items: center;
+}
+
+.nav-left{
+    margin-left: 8rem; 
+    background-color: transparent;
+    background: none;
+    
+}
+
+#contact{
+    background: var(--primary-color);
+    border: var(--primary-color) solid 2px;
+    border-radius: 5px;
+    padding: 0.5rem 1rem; 
+   
+}
+#contact:hover{
+    box-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color), 0 0 15px var(--primary-color), 0 0 20px var(--primary-color), 0 0 25px var(--primary-color), 0 0 30px var(--primary-color), 0 0 35px var(--primary-color);
+
+    transition: 0.2s ease-in-out;
+    transform: scale(1.01);
+}
+
+
+.element:hover{
+    color: var(--secondary-color);
+    
+    text-shadow: 0 0 5px var(--secondary-color), 0 0 10px var(--secondary-color), 0 0 15px var(--secondary-color), 0 0 20px var(--secondary-color), 0 0 25px var(--secondary-color), 0 0 30px var(--secondary-color), 0 0 35px var(--secondary-color);
+
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+
+
+}
+
+.first-section{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    width: 100%;
+
+    border: white solid 2px;
+}
+.hero{
+    padding: 0;
+
+    height: 100vh;
+    max-height: calc(100vh - 50px);
+    width: 60em;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.hi {
+    color: var(--primary-color);
+    text-align: center;
+    line-height: 1;
+    background-color: transparent;
+    background: none;
+    
+  
+  .line1 {
+    font-size: 3rem;
+    font-weight: 600;
+  
+  }
+  }
+  
+  .line2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #fcfcfc;
+  }
+
+button:hover{
+    cursor:pointer;
+}
+
+button,button::after {
+    padding: 0.3rem 3rem;
+    font-size: 1.3rem;
+    border: var(--primary-color) solid 2px;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  button::after {
+    --move1: inset(50% 50% 50% 50%);
+    --move2: inset(31% 0 40% 0);
+    --move3: inset(39% 0 15% 0);
+    --move4: inset(45% 0 40% 0);
+    --move5: inset(45% 0 6% 0);
+    --move6: inset(14% 0 61% 0);
+    clip-path: var(--move1);
+    content: "Welcome";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  
+  button:hover::after {
+    animation: glitch_4011 1s;
+    text-shadow: 10 10px 10px black;
+    animation-timing-function: steps(2, end);
+    text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+    background-color: transparent;
+    border: 3px solid var(--secondary-color);
+  }
+  
+  button:hover {
+    text-shadow: -1px -1px 0px var(--primary-color);
+  }
+  
+  button:hover {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 10px 10px -10px var(--primary-color);
+  }
+  
+  @keyframes glitch_4011 {
+    0% {
+      clip-path: var(--move1);
+      transform: translate(0px,-10px);
+    }
+  
+    10% {
+      clip-path: var(--move2);
+      transform: translate(-10px,10px);
+    }
+  
+    20% {
+      clip-path: var(--move3);
+      transform: translate(10px,0px);
+    }
+  
+    30% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    40% {
+      clip-path: var(--move5);
+      transform: translate(10px,-10px);
+    }
+  
+    50% {
+      clip-path: var(--move6);
+      transform: translate(-10px,10px);
+    }
+  
+    60% {
+      clip-path: var(--move1);
+      transform: translate(10px,-10px);
+    }
+  
+    70% {
+      clip-path: var(--move3);
+      transform: translate(-10px,10px);
+    }
+  
+    80% {
+      clip-path: var(--move2);
+      transform: translate(10px,-10px);
+    }
+  
+    90% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    100% {
+      clip-path: var(--move1);
+      transform: translate(0);
+    }
+  }
+  
+
+  @media only screen and (max-width: 600px){
+    .hero{
+        width: 90%;
+        height: 100vh;
+        max-height: calc(100vh - 50px);
+    }
+    .nav-left{
+        display:none
+
+    }
+    nav{
+        gap: 1rem;
+        padding: 0.5rem 0;
+        overflow: hidden;
+        justify-content: center;
+    }
+    
+    }
+    .nav-right{
+        margin-right: 15px; 
+        gap: 0.5px ;
+        background-color: transparent;
+        background: none;
+    }
+    .nav-right a {
+
+        color: var(--text-color);
+        font-weight: 300;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 400;
+        background-color: transparent;
+        background: none;
+      }
+      button,button::after {
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+      }
+      button:hover::after {
+        animation: glitch_4011 0.5s;
+      }
+
