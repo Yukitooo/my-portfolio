@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="projects.css">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -21,12 +21,11 @@
         </div>
         <div class="nav-right">
             <a class="element" href="#">Home</a>
-            <a class="element" href="#">Projects</a>
+            <a class="element" href="#projects">Projects</a>
             <a class="element" href="#">About</a>
             <a id="contact"href="#">Contact</a>
           </div>
     </nav>
-    <div class="scroll-container">
         <section class="content">
             <div class="first-section">
                 <div class="hero">
@@ -34,64 +33,194 @@
                         <span class="line1">Hi, I'm Yuki!</span><br>
                         <span class="line2">Aspiring software and AI engineer, driven to build intelligent systems.</span>
                     </p>
-                    <button>
+                    <!-- <button>
                         Explore Portfolio
-                    </button>
+                    </button> -->
                 </div>
             </div>
            
         </section>
-        
-        <section class="content">>
-            <div class="projects">
-                <h1>Projects</h1>
-                <div class="card-flex">
-                    <div class="project-card">
+    
+    <section class="content" id="projects">
+        <div class="projects" >
+            <h1 class="project-text">Projects</h1>
+            <div class="card-flex">
+                <div class="project-card portfolio-card" id="portfolio_card">
+                    <h2>My Portfolio</h2>
+                    <p>My own personal portfolio.</p>
+                    <br>
+                    <h3>Showcased skills: </h3>
+                    <ul class="skills-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                        <li>Web Design</li>
+                    </ul>
+                    
+                </div>
+
+                <div class="portfolio_modal modal-content" id="portfolio_modal">
+                    <div class="portfolio_modal_content" id="portfolio_modal_content">
+                        <span class="close-btn">&times;</span>
                         <h2>My Portfolio</h2>
-                        <p>My own personal portfolio.</p>
-                        <br>
-                        <h3>Showcased skills: </h3>
-                        <ul class="skills-list">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Responsive Design</li>
-                            <li>Web Design</li>
-                    </div>
-                    <div class="project-card">
-                        <h2> Katarina Website</h2>
-                        <p>A fan website for Katarina (League of Legends charater). 
-                        </p>
-                        <br>
-                        <h3>Showcased skills: </h3>
-                        <ul class="skills-list">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Responsive Design</li>
-                            <li>Web Design</li>
-                    </div>
-                    <div class="project-card">
-                        <h2>Discord Bot</h2>
-                        <p>An AI chatbot for a religious organization.</p>
-                        <br>
-                        <h3>Showcased skills:</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>Discord API</li>
-                            <li>AI</li>
-                            <li>Chatbot</li>
-                        </ul>
-                    </div>
-                    <div class="project-card">
-                        <h2>Coming more soon... </h2>
+                        <p><strong>Github repo:</strong> <a href="https://github.com/Yukitooo/my-portfolio" target="_blank" >https://github.com/Yukitooo/my-portfolio</a> </p>
                     </div>
                 </div>
-               
+
+                <div class="project-card katarina-card" id="katarina-card">
+                    <h2> Katarina Website</h2>
+                    <p>A fan website for Katarina (League of Legends charater). 
+                    </p>
+                    <br>
+                    <h3>Showcased skills: </h3>
+                    <ul class="skills-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                        <li>Web Design</li>
+                    </ul>
+
+                </div>
+
+                <div class="katarina_modal" id="katarina_modal">
+                    <div class="katarina_modal_content" id="katarina_modal_content">
+                        <span class="close-btn-kat">&times;</span>
+                        <h2>Katarina Website</h2>
+                        <p><strong>Github repo:</strong> <a href="https://github.com/Yukitooo/katWebsite" target="_blank" >https://github.com/Yukitooo/katWebsite</a></p>
+                    </div>
+                </div>
+                <div class="project-card discord-card" id="discord-card">
+                    <h2>Discord Bot</h2>
+                    <p>An AI communicaton platform chatbot for an organization.</p>
+                    <br>
+                    <h3>Showcased skills:</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Discord API</li>
+                        <li>AI</li>
+                        <li>Chatbot</li>
+                    </ul>
+                </div>
+
+                <div class="discord_modal modal-content" id="discord_modal">
+                    <div class="discord_modal_content" id="discord_modal_content">
+                        <span class="close-btn-discord">&times;</span>
+                        <h2>Discord Bot</h2>
+                        <p><strong>Github repo:</strong> <a href="https://github.com/Yukitooo/nlesBot" target="_blank" >https://github.com/Yukitooo/nlesBot</a> </p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h2>More coming soon... </h2>
+                </div>
             </div>
-        </section>
-    </div>
+            
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about">
+            <div class="my-picture">
+                <img src="assets\yuki-dp.jpg" alt="My Picture">
+            </div>
+            <div class="my-details">
+                <h1>About Me </h1>
+                <p>I'm a passionate software engineer with a keen interest in AI and web development. I love creating innovative solutions that make a difference. My goal is to leverage technology to solve real-world problems and enhance user experiences.</p>
+                <p>In my free time, I enjoy exploring new technologies and working on personal projects. I'm always eager to learn and grow in this ever-evolving field.</p>
+                <span class="quote">“Technology is best when it brings people together.” — Matt Mullenweg</span>
+                <div class="more-details">
+                    <div class="more-more-details">
+                        <h2>Details:</h2>
+                        <ul>
+                            <li><strong>Name:</strong> Zachary Brent L. Mayuga</li>
+                            <li> <strong>Birthday:</strong> September 21, 2002</li>
+                            <li> <strong>Bachelor's Degree:</strong> Computer Engineering</li>
+                            <li> <strong>Undergrad School:</strong> De La Salle University Manila</li>
+                            <li> <strong>Preferred Job:</strong> Software or AI Engineer</li>
+                            <li> <strong>Experience:</strong> Frontend Dev Intern| Essilor Luxottica</li>
+                        </ul>  
+                        <a href="assets\Resume_Mayuga.pdf" download><button   class="download-resume">Download Resume</button></a>
+                        
+                    </div>
+                    <div class="skills">
+                        <h2>Skills: </h2>
+                        <div class="logos">
+                            <div class="web-dev-logos">
+                                <h4>Web Development</h>
+                                    <div class="web-dev-pictures">
+                                        <img src="assets\html-5-svgrepo-com.svg" alt="HTML">
+                                        <img src="assets\css-3-svgrepo-com.svg" alt="CSS" > 
+                                        <img src="assets\javascript-svgrepo-com.svg" alt="Javascript">
+                                        <img src="assets\react-svgrepo-com.svg" alt="React">
+                                     </div>
+                            </div>
+                             
+                            <div class="AI-logos">
+                                <h4>AI Tools</h4>
+                                <div class="ai-dev-pictures">
+                                    <img src="assets\python-svgrepo-com.svg" alt="Python">
+                                    <img src="assets\pytorch-svgrepo-com.svg" alt="Pytorch">
+                                    <img src="assets\tensorflow-svgrepo-com.svg" alt="Tensor Flow">
+                                </div>
+                            
+                            </div>
+                            <div class="work-progress">
+                                <h4>Work In Progress</h4>
+                                <div class="work-progress-pictures">
+                                    <img src="assets\php-svgrepo-com.svg" alt="PHP">
+                                    <img src="assets\tailwind-svgrepo-com.svg" alt="Tailwind">
+                                    <img src="assets\mongodb-svgrepo-com.svg" alt="mongodb">
+                                    <img src="assets\sql-svgrepo-com.svg" alt="sql">
+                                </div>
+                            </div>
+                            <div class="programming-language">
+                                <h4>Programming Languages</h4>
+                                <div class="programming-languages-pictures">
+                                    <img src="assets\java-svgrepo-com.svg" alt="Java">
+                                    <img src="assets\c-plus-plus-svgrepo-com.svg" alt="">
+                                    <img src="assets\matlab-svgrepo-com.svg" alt="">
+                                    <img src="assets\python-svgrepo-com.svg" alt="Python">
+                                    <img src="assets\assembly-svgrepo-com.svg" alt="">
+                                    <img src="assets\arduino-svgrepo-com.svg" alt="">
+                                    <img src="assets\verilog-svgrepo-com.svg" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>  
+    </section>
+
+    <footer>
+        <h1>HIRE ME</h1>
+        <div class="contact-photos">
+            <a href="https://www.facebook.com/yukibrent" target="_blank">
+                <img src="assets\facebook-color-svgrepo-com.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/_yukitooo/" target="_blank">
+                <img src="assets\instagram-1-svgrepo-com.svg" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/zachary-brent-mayuga-097638301/" target="_blank">
+                <img src="assets\linkedin-svgrepo-com.svg" alt="">
+            </a>
+            
+            <a href="https://github.com/Yukitooo" target="_blank">
+                <img src="assets\github-color-svgrepo-com.svg" alt="">
+            </a>
+            
+        </div>
+        <div>
+            <p><strong>Mobile Number: </strong> 09762318622</p>
+            <p><strong>Email: </strong> yukibrent9@gmail.com</p>
+        </div>
+
+    </footer>
     
-    
+    <script src="index.js"></script>
 </body>
+    
 </html>

@@ -4,52 +4,110 @@
     --accent-color: #000000;
     --text-color: #fdfdfd;
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
 
-.projects{
-    margin: 0;
-    padding: 0;
-    color: var(--text-color);
-    height: 100vh;
-    max-height: calc(100vh- 50px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: white solid 2px;
-    gap: 50px;
-}
-
-.projects h1{
-    color: var(--primary-color);
-    position: relative; 
+  .portfolio_modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
     top: 0;
-    text-align: center;
-    font-size: 3rem;
-    line-height: 1;
-    background-color: transparent;
-    background: none;
-}
-.card-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
     width: 100%;
-    padding: 0 2rem;
-}
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    overflow: wrap ;
+  }
 
-.project-card{
-    background-color: rgba(45, 68, 71, 0.4);
-    color: var(--text-color);
-    width: 20%;
-    height: 30em;
-    border-radius: 10px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
+  .portfolio_modal_content {
+    background-color: #fff;
+    color: black;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  .close-btn  {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .katarina_modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .katarina_modal_content {
+    background-color: #fff;
+    color: black;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  .close-btn-kat {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .discord_modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .discord_modal_content {
+    background-color: #fff;
+    color: black;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  .close-btn-discord {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .portfolio_modal_content,
+    .katarina_modal_content,
+    .discord_modal_content {
+      width: 90%;
+      padding: 1rem;
+      margin: 70% auto;
+    }
+
+    
+  }

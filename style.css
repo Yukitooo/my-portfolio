@@ -4,6 +4,10 @@
     --accent-color: #000000;
     --text-color: #fdfdfd;
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; 
+  }
 
 *{
     margin: 0;
@@ -21,7 +25,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 500vh;
+    height: 340vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -115,10 +119,9 @@ nav{
     display: flex; 
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 100px);
+    height: 100vh;;
     width: 100%;
 
-    border: white solid 2px;
 }
 .hero{
     padding: 0;
@@ -305,3 +308,245 @@ button,button::after {
         animation: glitch_4011 0.5s;
       }
 
+      /* projects section */
+
+      .projects{
+        margin: 0;
+        padding: 0;
+        color: var(--text-color);
+        height: 100vh;
+        max-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap : 2rem;
+      
+
+    }
+    
+    .projects h1{
+        color: var(--primary-color);
+        position: relative; 
+        top: 0;
+        text-align: center;
+        font-size: 3rem;
+        line-height: 1;
+        background-color: transparent;
+        background: none;
+    }
+    .card-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 2rem;
+    }
+    
+    .project-card{
+        background-color: rgba(45, 68, 71, 0.4);
+        color: var(--text-color);
+        width: 250px;
+        height: 30em;
+        border-radius: 10px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+    }
+    
+    .project-card:hover{
+        background-color: rgba(68, 89, 92, 0.6);
+        transition: all 0.1s ease-in-out;
+    }
+    
+    .project-card p{
+        color: var(--text-color);
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .projects{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+      }
+      .project-card{
+        font-size: 0.8rem;
+        width: 40%; 
+        text-align: center;
+        list-style: none;
+  
+      }
+      .project-card ul{
+          list-style: none;
+          padding: 0;
+          margin: 0;
+      
+        /* CSS rules for mobile phones go here */
+      }
+
+      .card-flex{
+        margin-top: 2rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        overflow:scroll;
+        height: 50vh; 
+        width: 100%;
+        padding: 0 2rem;
+      
+
+    }
+
+  }
+
+  /* THIRD SECTION */
+
+  .about{
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .my-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+
+  }
+
+  .my-picture img{
+    width: 60%;
+    height: 70%;
+    object-fit: cover;
+    
+    /* box-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 30px var(--primary-color), 0 0 40px var(--primary-color), 0 0 50px var(--primary-color), 0 0 60px var(--primary-color), 0 0 70px var(--primary-color); */
+  }
+  .my-details{
+    display: flex;
+    margin-right: 2rem; 
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: justify;
+    gap: 2rem;
+    height: 100%;
+    width: 50%;
+  }
+  
+  .my-details h1{
+    color: var(--primary-color);
+    font-size: 3rem; 
+  }
+
+  .more-details{
+    display:flex; 
+
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+ 
+  }
+
+  .more-more-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    gap: 3rem; 
+    margin-right: 2rem;
+  
+    
+  }
+
+  .more-more-details ul{
+    list-style: none; 
+    text-align: left;
+    justify-content: center;
+    align-items:center;
+ 
+  }
+
+  .skills{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    border-left: var(--primary-color) 1px solid;
+    padding-left: 2rem;
+    
+  
+  }
+
+  
+
+  .quote{
+    color: var(--primary-color);
+  }
+  .logos{
+    display: flex; 
+    flex-direction: column;
+  
+
+  }
+
+  .logos img{
+    width: 2.5rem;
+
+  }
+
+  
+
+  footer{
+    color: white;
+    background: black;
+    height: 40vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  footer img{
+    width: 2em;
+    cursor: pointer;
+
+  }
+
+  footer img:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+
+  footer h1{
+    color: var(--primary-color);
+    font-size: 3rem;
+  }
+
+  footer a{
+    text-decoration: none; 
+  }
+
+  footer p{
+    font-size: 1.3rem;
+  }
