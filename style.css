@@ -515,7 +515,30 @@ button,button::after {
 
   }
 
+  @media only screen and (max-width: 600px){
+    .about{
   
+      display: flex;
+      flex-direction: column; 
+      width: 100vw;
+      margin: 0; 
+      padding:0;  
+      font-size: 0.8rem;
+    }
+
+    .my-details{
+      width:90vw; 
+    }
+
+    .my-picture{
+      display:none;
+    }
+
+    .logos img{
+      width: 1.5rem;
+
+    }
+  }
 
   footer{
     color: white;
@@ -550,3 +573,5 @@ button,button::after {
   footer p{
     font-size: 1.3rem;
   }
+
+ 
